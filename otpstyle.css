@@ -1,0 +1,28 @@
+.otp label {
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.otp input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.otp input[type="submit"] {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.otp input[type="submit"]:hover {
+  background-color: #333;
+}

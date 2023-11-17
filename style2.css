@@ -1,0 +1,110 @@
+/* style.css */
+
+/* Common styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.con {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.con:hover {
+  transform: scale(1.01);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"],
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px #3498db;
+}
+
+.btn {
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: #3498db;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+.login-status-message-error {
+  color: #ff5555;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffebee;
+  transition: opacity 0.3s ease;
+}
+
+.login-status-message-success {
+  color: #33cc33;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0fff0;
+  transition: opacity 0.3s ease;
+}
+
+/* Additional styles for specific forms */
+/* You can add more specific styles for different forms if needed */
+.otp {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.otp label,
+.otp input[type="text"],
+.otp input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}

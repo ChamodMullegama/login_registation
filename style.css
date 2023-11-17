@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c9d6ff;
+  /*  background: linear-gradient(to right, #e2e2e2, #c9d6ff); */
+  background: linear-gradient(to right, #fc00ff, #00dbde);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+form {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  height: 100%;
+}
+
+.con {
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  width: 450px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
+.con h2 {
+  position: relative;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: whitesmoke;
+}
+
+a {
+  position: relative;
+  color: whitesmoke;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 25px;
+  display: block;
+}
+a:hover {
+  color: #ff0000;
+}
+
+.btn,
+input {
+  background-color: black;
+  color: white;
+  font-weight: 100;
+  border: 1px solid white;
+  margin: 8px 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+}
+
+.btn {
+  background: black;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input:hover {
+  background: whitesmoke;
+}
+button:hover {
+  background: white;
+  color: black;
+}
+
+/* Style for the container holding alert messages */
+.aleart {
+  position: absolute;
+  text-align: center;
+  margin-left: 73px;
+  margin-right: 30px;
+  margin-top: 15px;
+  text-align: center;
+  border-radius: 100px;
+  color: white;
+}
+
+/* Style for error messages */
+.login-status-message-error {
+  color: #ff0000;
+  background-color: #ffe6e6;
+  padding: 10px;
+  border: 1px solid #ff9999;
+  border-radius: 4px;
+  width: 300px;
+}
+
+/* Style for success messages */
+.login-status-message-success {
+  color: #008000;
+  background-color: #e6ffe6;
+  padding: 10px;
+  border: 1px solid #99ff99;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
