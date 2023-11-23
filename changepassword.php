@@ -16,6 +16,7 @@
               echo '<div class="login-status-message-error">' . $_SESSION['error'] . '</div>';
               unset($_SESSION['error']); // Clear the session variable after displaying the message
               }
+             
               ?>
         </div>
        <form action="reset_password.php" method="post">

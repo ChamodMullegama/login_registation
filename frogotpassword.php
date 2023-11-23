@@ -17,7 +17,10 @@
                 echo '<div class="login-status-message-error">' . $_SESSION['error'] . '</div>';
                 unset($_SESSION['error']); // Clear the session variable after displaying the message
             }
-           
+            if (isset($_SESSION['success'])) {
+                echo '<div class="login-status-message-success">' . $_SESSION['success'] . '</div>';
+                unset($_SESSION['success']); // Clear the session variable after displaying the message
+                }
             
     ?>
     </div>

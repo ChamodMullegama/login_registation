@@ -1,16 +1,24 @@
 <?php
+if (!class_exists('dbconn')) {
+    class dbconn {
+        private $host = 'localhost';
+        private $db_name = 'reg__login';
+        private $username = 'root';
+        private $password = '';
+        private $conn;
 
-$dbsearver ="localhost";
-$username ="root";
-$passsword ="";
-$database ="reg__login";
+        public function getConnection() {
+            $this->conn = null;
 
+            try {
+                $this->conn = new PDO("mysql:host={$this->host};dbname={$this->db_name}", $this->username, $this->password);
+                $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            } catch(PDOException $e) {
+                echo 'Connection Error: ' . $e->getMessage();
+            }
 
-$conn =mysqli_connect($dbsearver,$username,$passsword,$database);
-if($conn){
-    echo "sus";
+            return $this->conn;
+        }
+    }
 }
-
-
-
 ?>
