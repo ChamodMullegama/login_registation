@@ -52,7 +52,7 @@ if ($result_insert) {
     // ...rest of the code
     $sentmail = new sentmail(); 
     $sentmail->sendmail($name, $email, $otp);
-    $_SESSION['success'] = 'Registration successful. Please verify your account with the OTP sent to your email.';
+    $_SESSION['success'] = 'Registration successful. Please verify your account with the OTP sent to your Email.';
     header("location: verifye.php");
 } else {
     // ...rest of the code
