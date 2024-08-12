@@ -40,7 +40,7 @@ ini_set('display_errors', '1');
         <input type="password" id="password" name="password" placeholder="Enter password" required><br>
         <div class="links">
             <a href="./frogotpassword.php" class="forgot-password">Forgot password?</a>
-            <a href="./index.php" class="create-account">Create account</a>
+            <a href="./index.php" class="create-account">Create Account</a>
         </div>
       <button type="submit" name="login_submit" value="Register"  class="btn">login </button>
       
