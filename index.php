@@ -30,7 +30,7 @@ ini_set('display_errors', '1');
     </div>
   
     <form action="your_registration.php" method="POST"> 
-    <h2>Registration Form</h2>
+    <h2>Registration FormS</h2>
         <input type="text" id="name" name="name" placeholder="Enter your Name" required><br>
         <input type="email" id="email" name="email" placeholder="Enter your Email" required><br>
         <input type="password" id="password" name="password" placeholder="Enter Password" required><br>
